@@ -1,0 +1,105 @@
+// colors
+$buttonColor: #3a5aff;
+
+// fonts
+
+$fontFamilyCursive: 'Vibur', cursive;
+$fontFamilyNorm: 'Montserrat', normal;
+
+body {
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 78px;
+  left: 20px;
+  top: 32px;
+
+  background: url(../assets/kids_1.png);
+  border-radius: 50px;
+}
+
+.title {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 163px;
+  top: 42px;
+
+  font-family: $fontFamilyCursive;
+  font-weight: normal;
+}
+
+.intro {
+  position: absolute;
+  width: 522px;
+  height: 188px;
+  left: 140px;
+  top: 180px;
+
+  font-family: $fontFamilyNorm;
+  font-weight: 800;
+  font-size: 74px;
+  line-height: 90px;
+
+  color: #2f281e;
+}
+
+.intro-2 {
+  position: absolute;
+  width: 476px;
+  height: 62px;
+  left: 140px;
+  top: 403px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 45px;
+
+  color: #544837;
+}
+
+#btn {
+  position: absolute;
+  width: 110px;
+  height: 56px;
+  left: 89.93%;
+  right: 2.21%;
+  top: 6.14%;
+  bottom: 86.61%;
+
+  background: $buttonColor;
+  border-radius: 3px;
+
+  font-family: $fontFamilyNorm;
+}
+
+#btn-sgnup {
+  position: absolute;
+  width: 255px;
+  height: 56px;
+  left: 140px;
+  top: 550px;
+
+  font-family: $fontFamilyNorm;
+
+  background-color: $buttonColor;
+  border-radius: 3px;
+}
+
+.teacher {
+  position: absolute;
+  width: 435px;
+  height: 469px;
+  left: 865px;
+  top: 152px;
+
+  background: url(../assets/cartoon-teacher_1.png);
+  mix-blend-mode: normal;
+  // backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+}
