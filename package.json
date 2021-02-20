@@ -1,0 +1,15 @@
+{
+  "name": "class-with-chris",
+  "version": "1.0.0",
+  "description": "website to help learners read",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass homePage/home.scss:homePage/home.css signIn/signin.scss:signIn/signin.css signUp/signup.scss:signUp/signup.css --watch"
+  },
+  "author": "Robert Biehn",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
