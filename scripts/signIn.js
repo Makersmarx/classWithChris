@@ -52,7 +52,7 @@ const checkUser = () => {
   const userPassword = document.getElementById('password');
 
   if (userName.value === checkName && userPassword.value === checkPassword) {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
     return false;
   } else {
     alert('Error on login');

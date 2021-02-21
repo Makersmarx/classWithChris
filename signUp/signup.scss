@@ -1,0 +1,114 @@
+// colors
+$buttonColor: #3a5aff;
+
+// fonts
+
+$fontFamilyCursive: 'Vibur', cursive;
+$fontFamilyNorm: 'Montserrat', normal;
+
+body {
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 78px;
+  left: 20px;
+  top: 32px;
+
+  background: url(../assets/kids_1.png);
+  border-radius: 50px;
+}
+
+.btn-back {
+  position: absolute;
+  width: 110px;
+  height: 56px;
+  left: 89.93%;
+  right: 2.21%;
+  top: 6.14%;
+  bottom: 86.61%;
+
+  background: $buttonColor;
+  border-radius: 3px;
+
+  font-family: $fontFamilyNorm;
+}
+
+#title {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 175px;
+  top: 10px;
+
+  font-family: $fontFamilyCursive;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.teacher {
+  position: absolute;
+  width: 435px;
+  height: 469px;
+  left: 865px;
+  top: 152px;
+
+  background: url(../assets/cartoon-teacher_1.png);
+  mix-blend-mode: normal;
+}
+
+.sgnup {
+  position: absolute;
+  width: 377px;
+  height: 78px;
+  top: 225px;
+  left: 100px;
+
+  font-family: $fontFamilyNorm;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.input-1 {
+  position: absolute;
+  width: 401px;
+  height: 50px;
+  top: 354px;
+  left: 90px;
+
+  background: #fcde63;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: $fontFamilyNorm;
+}
+
+.input-2 {
+  position: absolute;
+  width: 401px;
+  height: 50px;
+  top: 425px;
+  left: 90px;
+
+  background: #fcde63;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: $fontFamilyNorm;
+}
+
+#bntup {
+  position: absolute;
+  width: 137px;
+  height: 44px;
+  top: 500px;
+  left: 220px;
+
+  background: $buttonColor;
+  font-family: $fontFamilyNorm;
+}

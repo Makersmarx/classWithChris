@@ -5,10 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class with Chris</title>
+
     <link rel="stylesheet" href="./signup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Vibur&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Test</h1>
+    <nav>
+      <div class="logo"></div>
+      <button class="btn-back">Log in</button>
+    </nav>
+    <div>
+      <h1 id="title">Classin with Chris</h1>
+    </div>
+    <section>
+      <h2 class="sgnup">
+        Please enter your details below to start your journey!
+      </h2>
+      <form>
+        <label for="username"></label>
+        <input
+          class="input-1"
+          type="text"
+          id="userName"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <label for="password"></label>
+        <input
+          class="input-2"
+          type="password"
+          id="userPassword"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button id="bntup" onclick="return storeUser()">Sign Up</button>
+      </form>
+    </section>
+
+    <div class="teacher"></div>
+
     <script src="../scripts/signUp.js"></script>
   </body>
 </html>
