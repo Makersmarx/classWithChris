@@ -12,6 +12,19 @@ body {
   border-radius: 50px;
 }
 
+.btn-back {
+  position: absolute;
+  width: 110px;
+  height: 56px;
+  left: 89.93%;
+  right: 2.21%;
+  top: 6.14%;
+  bottom: 86.61%;
+  background: #3a5aff;
+  border-radius: 3px;
+  font-family: "Montserrat", normal;
+}
+
 #title {
   position: absolute;
   width: 351px;
@@ -56,7 +69,7 @@ body {
   mix-blend-mode: normal;
   border: 1px solid #000000;
   box-sizing: border-box;
-  font-family: "Montserrat", normal;
+  font-family: "Vibur", cursive;
 }
 
 .input-2 {
@@ -69,7 +82,7 @@ body {
   mix-blend-mode: normal;
   border: 1px solid #000000;
   box-sizing: border-box;
-  font-family: "Montserrat", normal;
+  font-family: "Vibur", cursive;
 }
 
 #bntup {
@@ -80,6 +93,11 @@ body {
   left: 220px;
   background: #3a5aff;
   font-family: "Montserrat", normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=signup.css.map */

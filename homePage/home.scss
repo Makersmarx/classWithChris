@@ -1,4 +1,79 @@
+// colors
+$buttonColor: #3a5aff;
+
+// fonts
+
+$fontFamilyCursive: 'Vibur', cursive;
+$fontFamilyNorm: 'Montserrat', normal;
+
 body {
   margin: 0;
-  background-color: aqua;
+}
+
+nav {
+  background-color: #fcde63;
+  padding: 10px;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 78px;
+  left: 20px;
+  top: 32px;
+
+  background: url(../assets/kids_1.png);
+  border-radius: 50px;
+}
+
+.logout {
+  position: absolute;
+  width: 110px;
+  height: 56px;
+  left: 89.93%;
+  right: 2.21%;
+  top: 6.14%;
+  bottom: 86.61%;
+
+  background: $buttonColor;
+  border-radius: 3px;
+
+  font-family: $fontFamilyNorm;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#title {
+  margin: 40px auto;
+  width: 351px;
+  height: 51px;
+
+  font-family: $fontFamilyCursive;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.main-search {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 275px;
+  height: 35px;
+  margin: 25px;
+  border: 2px solid #fcde63;
+  font-family: $fontFamilyNorm;
+}
+
+#search-btn {
+  margin-top: 25px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid $buttonColor;
+  background-color: white;
+  font-family: $fontFamilyNorm;
 }

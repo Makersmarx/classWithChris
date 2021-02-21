@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class with Chris</title>
-    <link rel="stylesheet" href="../classWithChris/homePage/home.css" />
+    <link rel="stylesheet" href="./homePage/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Vibur&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
-      <h1>HELLO</h1>
+      <div class="logo"></div>
+      <button class="logout">
+        <a href="../signIn/signin.html">Log Out</a>
+      </button>
+      <div>
+        <h1 id="title">Classin with Chris</h1>
+      </div>
     </nav>
-    <h1>Test</h1>
-    <script src="../classWithChris/scripts/index.js"></script>
+    <main>
+      <div class="main-search">
+        <input type="text" placeholder="Search here" />
+        <button id="search-btn">Submit</button>
+      </div>
+    </main>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

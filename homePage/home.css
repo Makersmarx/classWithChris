@@ -1,6 +1,69 @@
 body {
   margin: 0;
-  background-color: aqua;
+}
+
+nav {
+  background-color: #fcde63;
+  padding: 10px;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 78px;
+  left: 20px;
+  top: 32px;
+  background: url(../assets/kids_1.png);
+  border-radius: 50px;
+}
+
+.logout {
+  position: absolute;
+  width: 110px;
+  height: 56px;
+  left: 89.93%;
+  right: 2.21%;
+  top: 6.14%;
+  bottom: 86.61%;
+  background: #3a5aff;
+  border-radius: 3px;
+  font-family: "Montserrat", normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#title {
+  margin: 40px auto;
+  width: 351px;
+  height: 51px;
+  font-family: "Vibur", cursive;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.main-search {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 275px;
+  height: 35px;
+  margin: 25px;
+  border: 2px solid #fcde63;
+  font-family: "Montserrat", normal;
+}
+
+#search-btn {
+  margin-top: 25px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #3a5aff;
+  background-color: white;
+  font-family: "Montserrat", normal;
 }
 
 /*# sourceMappingURL=home.css.map */
