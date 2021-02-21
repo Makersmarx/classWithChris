@@ -12,7 +12,7 @@ body {
   border-radius: 50px;
 }
 
-.title {
+#title {
   position: absolute;
   width: 351px;
   height: 51px;
@@ -81,7 +81,54 @@ body {
   top: 152px;
   background: url(../assets/cartoon-teacher_1.png);
   mix-blend-mode: normal;
-  /* Note: backdrop-filter has minimal browser support */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 20%;
+  top: 20%;
+  width: 50%;
+  /* Full width */
+  height: 50%;
+  /* Full height */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(58, 90, 255, 0.4);
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 25px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 50%;
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #fcde63;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.log-button {
+  margin: 0 auto;
+  width: 110px;
+  height: 56px;
 }
 
 /*# sourceMappingURL=signin.css.map */

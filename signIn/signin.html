@@ -17,12 +17,35 @@
     <nav>
       <div class="logo"></div>
       <button id="btn">Log in</button>
+       <!-- modal div -->
+    <div id="myModal" class="modal">
+       <!-- modal content -->
+    <div class="modal-content">
+      <span id="close">x</span>
+      <form>
+        <label for="username"></label>
+        <input type="text" id="username" placeholder="Username" required />
+
+        <label for="password"></label>
+        <input type="password" id="password" placeholder="Password" required />
+
+        
+          <button class='log-button' onclick="return checkUser()">Login</button>
+          
+    </div>
+   
+   
     </nav>
-    <h1 class="title">Classin with Chris</h1>
+   
+    <h1 id="title">Classin with Chris</h1>
     <h2 class="intro">Make learning fun!</h2>
     <p class="intro-2">Any subject, any time, in any location, for all ages!</p>
-    <button id="btn-sgnup">Sign up for free</button>
+    <button id="btn-sgnup">
+      <a href="../signUp/signup.html"></a>Sign up for free
+    </button>
     <div class="teacher"></div>
+   </div>
+       
     <script src="../scripts/signIn.js"></script>
   </body>
 </html>
