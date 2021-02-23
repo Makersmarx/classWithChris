@@ -13,10 +13,6 @@ logIn.addEventListener('click', () => {
   console.log('yep');
 });
 
-// titleHover.addEventListener('mouseover', () => {
-//   titleHover.style.fontSize = '25px';
-// });
-
 // modal
 // Get the modal
 const modal = document.getElementById('myModal');

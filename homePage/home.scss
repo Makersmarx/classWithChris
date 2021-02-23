@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  background-color: #fcde63;
+  background-color: #3a5aff;
   padding: 10px;
 }
 
@@ -35,13 +35,13 @@ nav {
   top: 6.14%;
   bottom: 86.61%;
 
-  background: $buttonColor;
+  background: #fcde63;
   border-radius: 3px;
 
   font-family: $fontFamilyNorm;
 }
 
-a {
+#anchor {
   text-decoration: none;
   color: #000000;
 }
@@ -63,9 +63,9 @@ a {
 
 input {
   width: 275px;
-  height: 35px;
+  height: 40px;
   margin: 25px;
-  border: 2px solid #fcde63;
+  border: 2px solid $buttonColor;
   font-family: $fontFamilyNorm;
 }
 
@@ -76,4 +76,42 @@ input {
   border: 2px solid $buttonColor;
   background-color: white;
   font-family: $fontFamilyNorm;
+}
+
+#search-btn2 {
+  display: none;
+  margin-top: 25px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid $buttonColor;
+  background-color: white;
+  font-family: $fontFamilyNorm;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 35px;
+
+  // border-radius: 5px;
+  // // border: 2px solid black;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.boxes {
+  margin: 55px auto;
+
+  border: 2px solid black;
+  padding: 55px;
+}
+
+#imagebutton {
+  margin-top: 300px;
+}
+
+.rounded {
+  margin-bottom: 15px;
+  padding: 35px;
 }

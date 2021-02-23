@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-  background-color: #fcde63;
+  background-color: #3a5aff;
   padding: 10px;
 }
 
@@ -25,12 +25,12 @@ nav {
   right: 2.21%;
   top: 6.14%;
   bottom: 86.61%;
-  background: #3a5aff;
+  background: #fcde63;
   border-radius: 3px;
   font-family: "Montserrat", normal;
 }
 
-a {
+#anchor {
   text-decoration: none;
   color: #000000;
 }
@@ -51,9 +51,9 @@ a {
 
 input {
   width: 275px;
-  height: 35px;
+  height: 40px;
   margin: 25px;
-  border: 2px solid #fcde63;
+  border: 2px solid #3a5aff;
   font-family: "Montserrat", normal;
 }
 
@@ -64,6 +64,38 @@ input {
   border: 2px solid #3a5aff;
   background-color: white;
   font-family: "Montserrat", normal;
+}
+
+#search-btn2 {
+  display: none;
+  margin-top: 25px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #3a5aff;
+  background-color: white;
+  font-family: "Montserrat", normal;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 35px;
+}
+
+.boxes {
+  margin: 55px auto;
+  border: 2px solid black;
+  padding: 55px;
+}
+
+#imagebutton {
+  margin-top: 300px;
+}
+
+.rounded {
+  margin-bottom: 15px;
+  padding: 35px;
 }
 
 /*# sourceMappingURL=home.css.map */
