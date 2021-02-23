@@ -48,7 +48,7 @@ $(document).ready(() => {
       '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
     );
     $(window).on('load', function () {
-      setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+      setTimeout(removeLoader, 1000); //wait for page load PLUS one second.
     });
     function removeLoader() {
       $('#loadingDiv').fadeOut(500, function () {

@@ -5,13 +5,13 @@ const titleHover = document.getElementById('title');
 
 // event listeners
 signUp.addEventListener('click', () => {
-  console.log('test');
+  // console.log('test');
   window.location.href = '../signUp/signup.html';
 });
 
-logIn.addEventListener('click', () => {
-  console.log('yep');
-});
+// logIn.addEventListener('click', () => {
+//   console.log('yep');
+// });
 
 // modal
 // Get the modal
