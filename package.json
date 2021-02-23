@@ -10,6 +10,7 @@
   "author": "Robert Biehn",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "license": "UNLICENSED"
   }
 }

@@ -14,17 +14,17 @@ $(document).ready(() => {
         'https://www.googleapis.com/books/v1/volumes?q=' + search,
         function (response) {
           for (let i = 0; i < response.items.length; i++) {
-            title = $(
-              '<div class="boxes">' +
-                response.items[i].volumeInfo.title +
-                '</div>'
-            );
+            // title = $(
+            //   '<div class="boxes">' +
+            //     response.items[i].volumeInfo.title +
+            //     '</div>'
+            // );
 
-            author = $(
-              '<div class="boxes"> By: ' +
-                response.items[i].volumeInfo.authors +
-                '</div>'
-            );
+            // author = $(
+            //   '<div class="boxes"> By: ' +
+            //     response.items[i].volumeInfo.authors +
+            //     '</div>'
+            // );
             img = $(
               '<img id="test" class="rounded" alt="google book search results" > <br> <a href=' +
                 response.items[i].volumeInfo.infoLink +
@@ -69,10 +69,11 @@ buttonChange.addEventListener('click', () => {
   bntTwo.style.display = 'block';
 });
 
-bntTwo.addEventListener('click', () => {
+bntTwo.addEventListener('click', (event) => {
   let gridDef = document.querySelector('.grid');
   gridDef.remove();
   document.body.style.backgroundColor = 'white';
   buttonChange.style.display = 'block';
   bntTwo.style.display = 'none';
+  document.querySelector('.test').reset();
 });
