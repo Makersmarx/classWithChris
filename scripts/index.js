@@ -40,8 +40,6 @@ $(document).ready(() => {
         }
       );
     }
-
-    return false;
   });
   $(document).ready(() => {
     $('body').append(
@@ -59,9 +57,12 @@ $(document).ready(() => {
   });
 });
 
-let buttonChange = document.getElementById('search-btn');
+// onclick variables
+
+let buttonChange = document.querySelector('#search-btn');
 let bntTwo = document.querySelector('#search-btn2');
 let inputText = document.querySelector('#books');
+let gridRemove = document.querySelector('#test');
 
 buttonChange.addEventListener('click', () => {
   document.body.style.backgroundColor = '#fcde63';
@@ -69,11 +70,14 @@ buttonChange.addEventListener('click', () => {
   bntTwo.style.display = 'block';
 });
 
-bntTwo.addEventListener('click', (event) => {
-  let gridDef = document.querySelector('.grid');
-  gridDef.remove();
+bntTwo.addEventListener('click', () => {
+  console.log(gridRemove);
   document.body.style.backgroundColor = 'white';
   buttonChange.style.display = 'block';
   bntTwo.style.display = 'none';
-  document.querySelector('.test').reset();
+  document.querySelector('.inputs').reset();
+  // removes images from grid
+  while (gridRemove.firstChild) {
+    gridRemove.removeChild(gridRemove.firstChild);
+  }
 });
