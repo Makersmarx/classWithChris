@@ -43,6 +43,7 @@ window.addEventListener('click', (event) => {
 const checkUser = () => {
   const checkName = localStorage.getItem('userName');
   const checkPassword = localStorage.getItem('userPassword');
+  const alertOne = document.getElementById('alertOne');
 
   const userName = document.getElementById('username');
   const userPassword = document.getElementById('password');
@@ -51,6 +52,6 @@ const checkUser = () => {
     window.location.href = '../index.html';
     return false;
   } else {
-    alert('Error on login');
+    alert('Incorrect login details, please try again');
   }
 };

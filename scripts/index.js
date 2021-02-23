@@ -3,7 +3,7 @@ $(document).ready(() => {
     let search = $('#books').val();
 
     if (search === '') {
-      alert('Please enter a book item');
+      alert('please search for a book');
     } else {
       let url = '';
       let img = '';
@@ -43,6 +43,20 @@ $(document).ready(() => {
 
     return false;
   });
+  $(document).ready(() => {
+    $('body').append(
+      '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
+    );
+    $(window).on('load', function () {
+      setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    });
+    function removeLoader() {
+      $('#loadingDiv').fadeOut(500, function () {
+        // fadeOut complete. Remove the loading div
+        $('#loadingDiv').remove(); //makes page more lightweight
+      });
+    }
+  });
 });
 
 let buttonChange = document.getElementById('search-btn');
@@ -61,5 +75,4 @@ bntTwo.addEventListener('click', () => {
   document.body.style.backgroundColor = 'white';
   buttonChange.style.display = 'block';
   bntTwo.style.display = 'none';
-  inputText.textContent = '';
 });
