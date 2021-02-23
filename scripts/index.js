@@ -7,54 +7,43 @@ $(document).ready(() => {
     } else {
       let url = '';
       let img = '';
-      // let title = '';
-      // let author = '';
 
       $.get(
-        'https://www.googleapis.com/books/v1/volumes?q=' + search,
+        'https://www.googleapis.com/books/v1/volumes?maxResults=40&q=' + search,
         function (response) {
           for (let i = 0; i < response.items.length; i++) {
-            // title = $(
-            //   '<div class="boxes">' +
-            //     response.items[i].volumeInfo.title +
-            //     '</div>'
-            // );
-
-            // author = $(
-            //   '<div class="boxes"> By: ' +
-            //     response.items[i].volumeInfo.authors +
-            //     '</div>'
-            // );
             img = $(
-              '<img id="test" class="rounded" alt="google book search results" > <br> <a href=' +
+              '<a href=' +
                 response.items[i].volumeInfo.infoLink +
-                '></a>'
+                '>' +
+                '<img src="' +
+                response.items[i].volumeInfo.imageLinks.thumbnail +
+                'id="test" class="rounded" alt="google book search results"/>' +
+                '</a>'
             );
 
             url = response.items[i].volumeInfo.imageLinks.thumbnail;
             img.attr('src', url);
-            // title.appendTo('.grid');
-            // author.appendTo('.grid');
             img.appendTo('.grid');
           }
         }
       );
     }
   });
-  $(document).ready(() => {
-    $('body').append(
-      '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
-    );
-    $(window).on('load', function () {
-      setTimeout(removeLoader, 1000); //wait for page load PLUS one second.
-    });
-    function removeLoader() {
-      $('#loadingDiv').fadeOut(500, function () {
-        // fadeOut complete. Remove the loading div
-        $('#loadingDiv').remove(); //makes page more lightweight
-      });
-    }
+
+  $('body').append(
+    '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
+  );
+  $(window).on('load', () => {
+    setTimeout(removeLoader, 1000); //wait for page load PLUS one second.
   });
+
+  const removeLoader = () => {
+    $('#loadingDiv').fadeOut(500, () => {
+      // fadeOut complete. Remove the loading div
+      $('#loadingDiv').remove(); //makes page more lightweight
+    });
+  };
 });
 
 // onclick variables
@@ -75,8 +64,9 @@ bntTwo.addEventListener('click', () => {
   document.body.style.backgroundColor = 'white';
   buttonChange.style.display = 'block';
   bntTwo.style.display = 'none';
-  document.querySelector('.inputs').reset();
-  // removes images from grid
+  document.querySelector('.inputs').reset(); // resets text in input/search
+
+  // removes images and links from grid
   while (gridRemove.firstChild) {
     gridRemove.removeChild(gridRemove.firstChild);
   }
