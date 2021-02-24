@@ -15,7 +15,7 @@ $(document).ready(() => {
             img = $(
               '<a href=' +
                 response.items[i].volumeInfo.infoLink +
-                '>' +
+                ' target="_blank">' +
                 '<img src="' +
                 response.items[i].volumeInfo.imageLinks.thumbnail +
                 'id="test" class="rounded" alt="google book search results"/>' +
