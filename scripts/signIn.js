@@ -43,7 +43,7 @@ window.addEventListener('click', (event) => {
 const checkUser = () => {
   const checkName = localStorage.getItem('userName');
   const checkPassword = localStorage.getItem('userPassword');
-  const alertOne = document.getElementById('alertOne');
+  // const alertOne = document.getElementById('alertOne');
 
   const userName = document.getElementById('username');
   const userPassword = document.getElementById('password');
