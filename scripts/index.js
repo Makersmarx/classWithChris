@@ -54,14 +54,12 @@ let inputText = document.querySelector('#books');
 let gridRemove = document.querySelector('#test');
 
 buttonChange.addEventListener('click', () => {
-  document.body.style.backgroundColor = '#fcde63';
   buttonChange.style.display = 'none';
   bntTwo.style.display = 'block';
 });
 
 bntTwo.addEventListener('click', () => {
   console.log(gridRemove);
-  document.body.style.backgroundColor = 'white';
   buttonChange.style.display = 'block';
   bntTwo.style.display = 'none';
   document.querySelector('.inputs').reset(); // resets text in input/search

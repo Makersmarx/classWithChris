@@ -8,6 +8,21 @@ $fontFamilyNorm: 'Montserrat', normal;
 
 body {
   margin: 0;
+  background: linear-gradient(-45deg, #3afaff, #ff38bd, #fcde63, #38ff7a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 nav {
@@ -167,3 +182,5 @@ input {
   height: 100%;
   background-color: #3a5aff;
 }
+
+// test
