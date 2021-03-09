@@ -141,8 +141,12 @@ body {
   cursor: pointer;
 }
 
-.log-button {
+@mixin button {
   margin: 0 auto;
   width: 110px;
   height: 24px;
+}
+
+.log-button {
+  @include button;
 }
