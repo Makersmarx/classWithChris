@@ -1,6 +1,7 @@
 $(document).ready(() => {
   $('#search-btn').on('click', () => {
     let search = $('#books').val();
+    document.querySelector('.inputs').reset();
 
     if (search === '') {
       alert('please search for a book');
